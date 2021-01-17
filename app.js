@@ -76,11 +76,9 @@ let leftUnique = [];
 let authorQuotes; //placeholder to replace
 
 
-//if everything is finished you need to show an alert "you've seen all quotes, do you want to reset?, click this button if yes" 
-
 const generateQuote = () => {
   if (showedQuotes.length < 1) {
-    randomElement = authorQuotes[Math.floor(Math.random() * authorQuotes.length)]; //need to replace "alan with selected variable"
+    randomElement = authorQuotes[Math.floor(Math.random() * authorQuotes.length)]; 
     showedQuotes.push(randomElement);
     document.getElementById('quotes').innerHTML = randomElement;
     leftUnique = authorQuotes.filter(function (el) {
@@ -104,30 +102,6 @@ const generateQuote = () => {
     }
   }
 };
-
-/* const generateQuote = () => {
-  randomElement = authorQuotes[Math.floor(Math.random() * authorQuotes.length)]; //need to replace "alan with selected variable"
-  if (showedQuotes.length < 1) {
-    showedQuotes.push(randomElement);
-    console.log(randomElement, showedQuotes);
-    document.getElementById("quotes").innerHTML = randomElement;
-  } else {
-    if (showedQuotes.length === authorQuotes.length) {
-      alert('You have seen all quotes, so it will start from the beginning');
-      showedQuotes = [];
-    } else {
-    let leftUnique = authorQuotes.filter(function (el) {
-      //checks for unique values which are left
-      return showedQuotes.indexOf(el) < 0;
-    });
-    newRandomElement =
-      leftUnique[Math.floor(Math.random() * leftUnique.length)];
-    showedQuotes.push(newRandomElement);
-    console.log('the same', newRandomElement, leftUnique);
-    document.getElementById("quotes").innerHTML = newRandomElement;
-  }};
-};
- */
 
 
 let selectedAutor =  () => {
