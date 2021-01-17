@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+#quotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    min-height: 200px;
+}
+
+
+.card {
+    padding: 2rem;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: teal;
+    margin: 2rem;
+    background-color: white;
+  }
+
+
+  button {
+    font: inherit;
+    color: rgb(0, 0, 0);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background:rgb(208, 236, 236);
+    cursor: pointer;
+    margin: 1rem;
+    border-color: teal;
+    border-style: solid;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:hover,
+  button:active {
+    background-color: teal;
+    color: white;
+
+  }
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: turquoise;
+  }
+
+  .text {
+     margin:2rem;
+  }
+
+
+
+  #author {
+    font: inherit;
+    color: rgb(0, 0, 0);
+    padding:5px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1rem;
+    border-color: teal;
+    border-style: solid;
+      };

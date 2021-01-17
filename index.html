@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Favourite quotes from books</title>
+    <link rel="stylesheet" media="screen and (min-width: 800px)" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="stylesmall.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="center">
+        <div class="text">
+            <p>Hello!&#128075 <br><br> Here you can find a collection of some of my favourite quotes. Just choose an
+                author from the list, or simply generate a random one! </p>
+        </div>
+        <label for="author">Choose an author:</label>
+        <select id="author" onchange="testFunction()" name="authorList" form="authorform">
+            <option value="All">All</option>
+            <option value="Alan">Alan Watts</option>
+            <option value="Yuval">Yuval Noah Harari</option>
+        </select>
+
+        <div id="quotes" class="card">
+            <p id='demo'> Click the button to start<br><br>&#128071</p>
+        </div>
+        <button id="quote-btn">Show me a quote!</button>
+    </div>
+</body>
+
+</html>
